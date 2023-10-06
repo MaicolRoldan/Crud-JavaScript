@@ -1,6 +1,6 @@
 export class CRUD{
-	#tableName = null;
-    #data = null;
+	#tableName = null;//se crean propiedades privadas(solo se pueden editar desde la clasa) en la cual se guardaran el nombre de la tabla y los datos de ella,
+    #data = null;//estas dos propiedades van a estar vacias inicialmente
 	constructor(tableName = undefined){
  		this.#setTableName(tableName);
       	this.#setData();
